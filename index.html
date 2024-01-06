@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" >
+<title>無標題文件</title>
+<link href="layout.css" rel="stylesheet" type="text/css">
+<script src="jquery-3.7.1.js"></script>
+<script>
+$(function(){
+	//mainmenu被載入menu.html
+	$("#mainmenu").load("menu.html")
+	$("#b1").click(function(){
+		$("#ap2").css("display","none");
+		$("#ap3").css("display","none");
+		$("#ap4").css("display","none");
+		$("#ap1").css("display","block");
+	})
+	$("#b2").click(function(){
+		$("#ap3").css("display","none");
+		$("#ap4").css("display","none");
+		$("#ap1").css("display","none");
+     	$("#ap2").css("display","block");
+	})
+	$("#b3").click(function(){
+		$("#ap4").css("display","none");
+		$("#ap1").css("display","none");
+     	$("#ap2").css("display","none");
+		$("#ap3").css("display","block");
+	})
+	$("#b4").click(function(){
+		$("#ap1").css("display","none");
+     	$("#ap2").css("display","none");
+		$("#ap3").css("display","none");
+		$("#ap4").css("display","block");
+	})
+	$("#ap1").click(function(){
+		$("#ap1").css("display","none");
+	})
+	$("#ap2").click(function(){
+		$("#ap2").css("display","none");
+	})
+	$("#ap3").click(function(){
+		$("#ap3").css("display","none");
+	})
+	$("#ap4").click(function(){
+		$("#ap4").css("display","none");
+	})
+})	
+</script>
+</head>
+
+<body>
+	<div id="mainmenu"></div>
+<header>
+  <div id="title">
+		   <h1>Helo!I'm Christine</h1>
+	     <p>A UX designer with a fashion and marketimg background.<br>
+         I incorporate innovative ideas into designs that solve everyday problems.</p>
+	</div>
+</header>
+  <main>
+	   <h2>Project</h2>
+	<section class="one">
+		<div class="box21"><div class="box-p"><a href="iHungryBear.pdf" target="_blank"><img src="index-image/iHungryBear preview.png" alt="project preview"></a></div>
+			
+		</div>
+		<div class="box21">
+		   <div class="box">
+			   <p class="f-time">Sep 2023 - Present</p>
+		<h3>iHungryBear Redesign</h3>
+		<p>A restaurant finding app connecting diners with local restaurants in Taiwan.</p>
+			</div>
+		</div>
+	  </section>
+	  <section class="line"></section>
+	  <h2>Other Work</h2>
+	  <section class="one">
+		<div class="box41"><img id="b1" src="index-image/w_halloween poster mockup.jpg" alt="artwork"/></div>
+		<div class="box41"><img id="b2" src="index-image/w_icon design.jpg" alt="artwork"/></div>
+		<div class="box41"><img id="b3" src="index-image/w_layout design.jpg" alt="artwork"/></div>
+		<div class="box41"><img id="b4" src="index-image/w_noodle shop mockup.jpg" alt="artwork"/></div> 
+    </section>
+	  <div id="ap1"><img src="index-image/b_halloween poster mockup.jpg" alt="work"/></div>
+	  <div id="ap2"><img src="index-image/b_icon design.png" alt="work"/></div>
+	  <div id="ap3"><img src="index-image/b_layout design.png" alt="work"/></div>
+	  <div id="ap4"><img src="index-image/b_noodle shop mockup.jpg" alt="work"/></div>
+    <section class="line"></section>
+	  <h2>Visions Through My Lens</h2>
+	  <ul>I love exploring the extraordinary in the ordinary. With my lens, I capture the hidden beauty in the city.</ul>
+	  <section class="one">
+		<div class="box41"><img src="index-image/IMG_7983.jpg" alt="spain"></div>
+		<div class="box41"><img src="index-image/IMG_9120.jpg" alt="corner light"></div>
+		<div class="box41"><img src="index-image/IMG_2240.jpg" alt="the vessel"></div>
+		<div class="box41"><img src="index-image/IMG_9063.jpg" alt="museum"></div>
+		<div class="box41"><img src="index-image/IMG_6804.jpg" alt="stadium"></div>
+		<div class="box41"><img src="index-image/IMG_0979.jpg" alt="space tower"></div>
+		<div class="box41"><img src="index-image/IMG_8482.jpg" alt="macaron"></div>
+		<div class="box41"><img src="index-image/IMG_5589.jpg" alt="carrot"></div> 
+	  </section>
+	  <section>&nbsp;</section>
+  </main>
+<footer></footer>
+	
+</body>
+</html>
