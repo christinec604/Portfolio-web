@@ -1,0 +1,60 @@
+@charset "utf-8";
+
+body {
+	margin:0;
+	padding:0;
+}
+
+#tt {
+	display:none; /* display陳列, none代表不出現*/
+}
+#nn {
+	background-color: black;
+	height:41px;
+}
+#nn ul {
+	background:black;
+	width:360px;
+	height:30px;
+	margin:0 auto;
+	padding: 0;
+}
+#nn li {
+    width:100px;
+	height: auto;
+	float: left; /*浮動靠左讓出右側空間*/
+	list-style: none; /*清單符號的樣式:不要*/
+	background-color: black;
+	padding: 10px;
+	text-align: center;
+}
+#nn li:hover{
+	background-color: gray;
+}
+#nn a {
+	font-family: "微軟正黑體", "Adobe 繁黑體 Std B", Arial;
+	color:aliceblue;
+	text-decoration: none;
+}
+/*手機板尺寸0-800px*/
+@media (max-width:800px){
+	#tt {
+		display: block; /*陳列:出現*/
+		background-color:black;
+		color:white;
+		text-align: center;
+		padding:10px 0;
+	}
+	#nn {
+		display:none;
+	}
+	#nn li {
+		float: none;
+		width:100%;
+		padding: 10px 0;
+	}
+	#nn ul {
+		width:auto;
+		height: auto;
+	}
+}
