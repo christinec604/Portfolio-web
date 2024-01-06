@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>無標題文件</title>
+<link href="menu.css" rel="stylesheet" type="text/css">
+<script src="jquery-3.7.1.js"></script>
+<script> //$(function(){})，代表網頁下載完全後執行大括號內的內容
+	$(function(){
+		//window被resize，執行一個function
+		$(window).resize(function(){
+			//宣告juliet是window的寬度
+			var juliet = $(window).width()
+			//如果juliet>=800，執行{}否則{}
+			if(juliet >= 800){
+				$("#nn").css("display","block")
+			}else{
+				$("#nn").css("display","none")
+			}
+		})
+		//#tt被按下時執行一個function
+		$("#tt").click(function(){
+			//if(){}else{} 如果(條件){條件成立執行的內容}否則{條件不成立的內容}
+		//如果nn的css的display屬性是none，就執行block，否則就none
+		var romio = $("#nn").css("display")
+		if(romio=="none"){
+			$("#nn").css("display","block")
+		}else{
+			$("#nn").css("display","none")
+		}
+		})
+		//
+	})
+</script>
+</head>
+
+<body>
+	<toggle id="tt">&equiv;</toggle> <!--toggle標籤是放置選單控制bar-->
+	<nav id="nn"> <!--nav標籤是放置選單用的-->
+	   <ul> <!--ul及li標籤是放置選單內容用的-->
+		  <li><a href="index.html" target="_self">HOME</a></li>
+		  <li><a href="about.html" target="_self">ABOUT</a></li>
+		  <li><a href="ChristineChien_Resume.pdf" target="_blank">RESUME</a></li>
+	   </ul>
+	</nav>
+</body>
+</html>
